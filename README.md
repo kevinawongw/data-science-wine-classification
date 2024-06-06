@@ -22,7 +22,7 @@ profiles they were looking for in a wine.
 <strong>Techniques</strong>
 
 * Data Wrangling & Text Processing.
-Our original database was very large, containing over 150,000 entries and
+- Our original database was very large, containing over 150,000 entries and
 over 600 wine varieties. For the scope of this project, we also needed to
 simplify our database to only include the relevant columns: wine_variety
 and description). After filtering out unnecessary columns, we also needed
@@ -34,7 +34,7 @@ and other commonly used words were removed from the descriptions.
 Keeping common words in the descriptions would skew the results of the
 item basket analysis.
 
-With such a large amount of wine varieties, we also decided to limit the
+- With such a large amount of wine varieties, we also decided to limit the
 number of wine varieties to the top six most frequent wines seen in our
 dataset. With the top six most common wine varieties, we are still left with
 a large amount of entries for each of the six wine varieties to run an item
@@ -52,7 +52,7 @@ all other varieties have that same number of samples. We decided which
 rows to keep by randomly selecting.
 
 * Item Basket Analysis
-Item Basket Analysis is a technique that is used to determine what is
+- Item Basket Analysis is a technique that is used to determine what is
 frequently seen together. We chose to use Item Basket Analysis because
 we were interested in seeing whether certain wine varieties tend to have
 similar profiles thus possibly yielding common wordsets within each type
@@ -61,7 +61,7 @@ of words. Doing so allowed us to use Itertools to quickly generate all
 possible combinations.
 
 * A-priori Algorithm
-Along with the Item Basket Analysis, we used A-priori Algorithm to mine
+- Along with the Item Basket Analysis, we used A-priori Algorithm to mine
 frequent itemsets. In this algorithm, we computed the ‘support’ by
 counting the number of entries an item/itemset appears. We then computed
 the ‘confidence’ by dividing it by the total number of entries. When the
@@ -72,9 +72,9 @@ guide on how to pick the best threshold. Therefore, we chose several
 different thresholds and chose the best performing one.
 
 * Confusion Matrix
-To evaluate our model at the end, we used the confusion matrix to check
+- To evaluate our model at the end, we used the confusion matrix to check
 how accurate it predicts the wine variety based on the description and have
 summarized our results. To approach this, we iterated through each of the
 predicted labels and plotted it on which label it was predicted to be and
 which label it actually was. We also displayed the accuracy, which was
-calculated by <img src="https://github.com/yugo9081/wine-classification/assets/54964332/1552477e-b4a3-4fa4-8c0c-3526c99573d7" width="150">. We used the seaborn python library to display the confusion matrix like a heat map.
+calculated by <img src="https://github.com/yugo9081/wine-classification/assets/54964332/1552477e-b4a3-4fa4-8c0c-3526c99573d7" width="180">. We used the seaborn python library to display the confusion matrix like a heat map.
