@@ -77,4 +77,4 @@ how accurate it predicts the wine variety based on the description and have
 summarized our results. To approach this, we iterated through each of the
 predicted labels and plotted it on which label it was predicted to be and
 which label it actually was. We also displayed the accuracy, which was
-calculated by <img src="https://github.com/yugo9081/wine-classification/assets/54964332/1552477e-b4a3-4fa4-8c0c-3526c99573d7" width="100">. We used the seaborn python library to display the confusion matrix like a heat map.
+calculated by <img src="https://github.com/yugo9081/wine-classification/assets/54964332/1552477e-b4a3-4fa4-8c0c-3526c99573d7" width="150">. We used the seaborn python library to display the confusion matrix like a heat map.
