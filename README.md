@@ -22,7 +22,8 @@ profiles they were looking for in a wine.
 <strong>Techniques</strong>
 
 * Data Wrangling & Text Processing.
-  Our original database was very large, containing over 150,000 entries and
+  
+Our original database was very large, containing over 150,000 entries and
 over 600 wine varieties. For the scope of this project, we also needed to
 simplify our database to only include the relevant columns: wine_variety
 and description). After filtering out unnecessary columns, we also needed
@@ -34,7 +35,7 @@ and other commonly used words were removed from the descriptions.
 Keeping common words in the descriptions would skew the results of the
 item basket analysis.
 
-  With such a large amount of wine varieties, we also decided to limit the
+With such a large amount of wine varieties, we also decided to limit the
 number of wine varieties to the top six most frequent wines seen in our
 dataset. With the top six most common wine varieties, we are still left with
 a large amount of entries for each of the six wine varieties to run an item
@@ -52,7 +53,8 @@ all other varieties have that same number of samples. We decided which
 rows to keep by randomly selecting.
 
 * Item Basket Analysis
-  Item Basket Analysis is a technique that is used to determine what is
+
+Item Basket Analysis is a technique that is used to determine what is
 frequently seen together. We chose to use Item Basket Analysis because
 we were interested in seeing whether certain wine varieties tend to have
 similar profiles thus possibly yielding common wordsets within each type
