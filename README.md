@@ -63,7 +63,8 @@ of words. Doing so allowed us to use Itertools to quickly generate all
 possible combinations.
 
 * A-priori Algorithm
-  Along with the Item Basket Analysis, we used A-priori Algorithm to mine
+  
+Along with the Item Basket Analysis, we used A-priori Algorithm to mine
 frequent itemsets. In this algorithm, we computed the ‘support’ by
 counting the number of entries an item/itemset appears. We then computed
 the ‘confidence’ by dividing it by the total number of entries. When the
@@ -74,7 +75,8 @@ guide on how to pick the best threshold. Therefore, we chose several
 different thresholds and chose the best performing one.
 
 * Confusion Matrix
-  To evaluate our model at the end, we used the confusion matrix to check
+  
+To evaluate our model at the end, we used the confusion matrix to check
 how accurate it predicts the wine variety based on the description and have
 summarized our results. To approach this, we iterated through each of the
 predicted labels and plotted it on which label it was predicted to be and
